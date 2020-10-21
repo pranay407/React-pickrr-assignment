@@ -1,0 +1,12 @@
+.searchStyle {
+    margin-left: 25%;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:380px){
+    .searchStyle{
+        margin-left: 10%;
+        width: 80%;
+    }
+}

@@ -1,0 +1,41 @@
+@import "~antd/dist/antd.css";
+
+.site-layout-content {
+  background: #fff;
+  padding: 24px;
+  min-height: 280px;
+}
+#components-layout-demo-top .logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+
+.menuStyle {
+  float: right;
+}
+
+.title{
+  font-size: 1.5rem;
+  color: #fff;
+}
+.title1{
+  visibility: hidden;
+}
+.headerStyle {
+  margin-bottom: 50px;
+}
+
+
+@media screen and (max-width:380px){
+  .title{
+    display: none;
+  }
+  .title1{
+    visibility: visible;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}
