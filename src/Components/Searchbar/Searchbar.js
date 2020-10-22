@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Input } from 'antd';
 import './Searchbar.css'
 
@@ -16,14 +16,14 @@ function Searchbar(){
         console.log(e.target.value);
     }
 
-    const HandleSearch =() =>{
-        useEffect(() =>{
-            fetch('https://api.punkapi.com/v2/beers?beer_name=${ser}')
-                .then(res => res.json())
-                .then(data => setSearch(data))
+    // const HandleSearch =() =>{
+    //     useEffect(() =>{
+    //         fetch('https://api.punkapi.com/v2/beers?beer_name=${ser}')
+    //             .then(res => res.json())
+    //             .then(data => setSearch(data))
                 
-        })
-    }
+    //     })
+    // }
     
     return(
         <>
@@ -33,7 +33,7 @@ function Searchbar(){
             enterButton="search" 
             size="large" 
             value={ser}
-            onSearch={HandleSearch}
+            // onSearch={HandleSearch}
             onChange={(e) => handleBeers(e)}
              />
         </>
